@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspectra Engenharia | Engenharia Diagnóstica</title>
+    <meta name="description" content="A Inspectra Engenharia é referência em inspeções prediais, estruturais e vistorias técnicas. Tecnologia de ponta para garantir segurança, prevenção e decisões seguras em condomínios e empresas.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="topbar-inner">
+            <div class="topbar-contacts">
+                <a href="mailto:contato@inspectraengenharia.com.br"><i class="far fa-envelope"></i> contato@inspectraengenharia.com.br</a>
+                <a href="tel:+5547996204777"><i class="fas fa-phone-alt"></i> (47) 9 9620-4777</a>
+                <span><i class="fas fa-map-marker-alt"></i> R. Dr. João Colin, 1285 - Joinville - SC</span>
+            </div>
+            <div class="topbar-social">
+                <span>Siga-nos:</span>
+                <a href="https://www.linkedin.com/in/inspectra-engenharia-109980386/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/inspectraengenharia/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/people/Inspectra-Engenharia/61582642889580/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-inner">
+            <a href="#" class="logo"><img src="Logo.png" width="120px" alt=""></a>
+            <nav id="nav">
+                <div class="nav-close-btn">
+                    <span class="nav-close-brand">INSPECTRA<span>ENGENHARIA</span></span>
+                    <button class="nav-close-x" id="nav-close" aria-label="Fechar menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#tecnologia">Tecnologia</a></li>
+                    <li><a href="#sindico">Síndico</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="nav-mobile-footer">
+                    <a href="https://wa.me/5547996204777?text=Olá, acessei o site da Inspectra Engenharia e gostaria de solicitar um orçamento." class="nav-mobile-cta" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Solicitar orçamento
+                    </a>
+                    <div class="nav-mobile-contact">
+                        <a href="tel:+5547996204777"><i class="fas fa-phone-alt"></i> (47) 9 9620-4777</a>
+                        <a href="mailto:contato@inspectraengenharia.com.br"><i class="far fa-envelope"></i> contato@inspectraengenharia.com.br</a>
+                    </div>
+                    <div class="nav-mobile-socials">
+                        <a href="https://www.linkedin.com/in/inspectra-engenharia-109980386/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/inspectraengenharia/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/people/Inspectra-Engenharia/61582642889580/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </nav>
+            <a href="https://wa.me/5547996204777?text=Olá, acessei o site da Inspectra Engenharia e gostaria de solicitar um orçamento." class="btn-header" target="_blank">
+                Fale Conosco <i class="fas fa-arrow-right"></i>
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <!-- Slideshow backgrounds -->
+        <div class="hero-slide active"></div>
+        <div class="hero-slide"></div>
+
+        <div class="hero-overlay"></div>
+
+        <!-- Slide indicators -->
+        <div class="hero-dots">
+            <button class="hero-dot active" aria-label="Slide 1"></button>
+            <button class="hero-dot" aria-label="Slide 2"></button>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge"><span></span> Laudos em até 48 horas</div>
+            <h1>Liderança em inspeções para quem exige <em>decisões seguras</em></h1>
+            <p>Especialistas em Engenharia Diagnóstica com foco em Vistorias, Inspeções e Laudos Técnicos. Unimos método, normas ABNT/IBAPE e evidências para proteger pessoas, patrimônio e valor.</p>
+            <div class="hero-actions">
+                <a href="https://wa.me/5547996204777?text=Olá, acessei o site da Inspectra Engenharia e gostaria de solicitar um orçamento." class="btn btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Solicite um orçamento
+                </a>
+                <a href="#servicos" class="btn btn-outline">Ver serviços <i class="fas fa-chevron-down"></i></a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Stats Strip -->
+    <section class="stats-strip">
+        <div class="stats-inner">
+            <div class="stat-item">
+                <strong>48h</strong>
+                <span>Prazo de entrega de laudos de vistoria</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <strong>ABNT</strong>
+                <span>Laudos embasados em normas ABNT/IBAPE</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <strong>8+</strong>
+                <span>Equipamentos de diagnóstico especializado</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <strong>100%</strong>
+                <span>Atendimento personalizado do início ao fim</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section-sobre">
+        <div class="container">
+            <div class="sobre-grid">
+                <div class="sobre-text">
+                    <div class="section-eyebrow"><i class="fas fa-hammer"></i> Sobre nossa empresa</div>
+                    <h2>Responsabilidade,<br>Excelência e Integridade</h2>
+                    <p>Na Inspectra Engenharia, acreditamos que cada imóvel carrega histórias, sonhos e memórias. Nosso propósito vai além de oferecer serviços técnicos; buscamos ser parceiros na jornada de cuidar e valorizar o que é importante para você.</p>
+                    <p>Oferecemos soluções personalizadas em laudos técnicos, vistorias, inspeções, projetos arquitetônicos e complementares, avaliação e regularização de imóveis, além de execução e gerenciamento de obras e reformas.</p>
+                    <p>Utilizamos tecnologia de ponta e seguimos rigorosamente as normas técnicas para garantir a segurança, conformidade e valorização do seu patrimônio.</p>
+
+                    <div class="sobre-diferenciais">
+                        <div class="diferencial-item">
+                            <div class="diferencial-icon"><i class="fas fa-headset"></i></div>
+                            <div>
+                                <h4>Atendimento 100% personalizado</h4>
+                                <p>Cada caso é único: acompanhamos do início ao fim, com linguagem clara, objetiva e transparência em cada etapa.</p>
+                            </div>
+                        </div>
+                        <div class="diferencial-item">
+                            <div class="diferencial-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div>
+                                <h4>Valorização do patrimônio</h4>
+                                <p>Decisões com clareza que preservam valor e evitam prejuízos desnecessários.</p>
+                            </div>
+                        </div>
+                        <div class="diferencial-item">
+                            <div class="diferencial-icon"><i class="fas fa-file-contract"></i></div>
+                            <div>
+                                <h4>Resguardo técnico e jurídico</h4>
+                                <p>Laudos embasados em normas ABNT/IBAPE que destravam decisões e protegem todas as partes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/5547996204777?text=Olá, acessei o site da Inspectra Engenharia e gostaria de saber mais." class="btn btn-primary" target="_blank">
+                        Fale conosco <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="sobre-visual">
+                    <div class="sobre-img-frame">
+                        <img src="engenharia.jpg" alt="Engenharia Diagnóstica">
+                        <div class="sobre-badge-float">
+                            <i class="fas fa-award"></i>
+                            <span>Empresa Parceira<br>Instituto Nova Engenharia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="section-servicos">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-eyebrow"><i class="fas fa-hammer"></i> Qualidade em serviços</div>
+                <h2>Soluções de Engenharia Diagnóstica</h2>
+                <p>Atendemos síndicos, construtoras, indústrias e proprietários que valorizam seriedade, transparência e previsibilidade.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="servico-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-building"></i></div>
+                            <h3>Inspeção Predial</h3>
+                            <span class="card-hint">Passe o mouse para saber mais</span>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-icon"><i class="fas fa-building"></i></div>
+                            <h3>Inspeção Predial</h3>
+                            <p>Antecipe riscos, reduza custos e mantenha seu condomínio seguro e valorizado.</p>
+                            <a href="https://wa.me/5547996204777?text=Olá, gostaria de saber mais sobre Inspeção Predial." class="card-cta" target="_blank">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="servico-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-hard-hat"></i></div>
+                            <h3>Inspeção Estrutural</h3>
+                            <span class="card-hint">Passe o mouse para saber mais</span>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-icon"><i class="fas fa-hard-hat"></i></div>
+                            <h3>Inspeção Estrutural</h3>
+                            <p>Segurança estrutural comprovada para evitar surpresas caras e decisões no escuro.</p>
+                            <a href="https://wa.me/5547996204777?text=Olá, gostaria de saber mais sobre Inspeção Estrutural." class="card-cta" target="_blank">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="servico-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-border-all"></i></div>
+                            <h3>Inspeção de Fachada</h3>
+                            <span class="card-hint">Passe o mouse para saber mais</span>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-icon"><i class="fas fa-border-all"></i></div>
+                            <h3>Inspeção de Fachada</h3>
+                            <p>Previna desplacamentos e infiltrações com diagnóstico preciso e plano de ação.</p>
+                            <a href="https://wa.me/5547996204777?text=Olá, gostaria de saber mais sobre Inspeção de Fachada." class="card-cta" target="_blank">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="servico-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-file-contract"></i></div>
+                            <h3>Laudos Técnicos</h3>
+                            <span class="card-hint">Passe o mouse para saber mais</span>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-icon"><i class="fas fa-file-contract"></i></div>
+                            <h3>Laudos Técnicos</h3>
+                            <p>Estudos técnicos, objetivos e embasados em normas, garantindo decisões assertivas e a prevenção de litígios.</p>
+                            <a href="https://wa.me/5547996204777?text=Olá, gostaria de saber mais sobre Laudos Técnicos." class="card-cta" target="_blank">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="servico-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h3>Vistoria Cautelar</h3>
+                            <span class="card-hint">Passe o mouse para saber mais</span>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h3>Vistoria Cautelar</h3>
+                            <p>Registro técnico pré-obra: proteção completa para blindar sua construtora contra conflitos e responsabilizações.</p>
+                            <a href="https://wa.me/5547996204777?text=Olá, gostaria de saber mais sobre Vistoria Cautelar." class="card-cta" target="_blank">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="servico-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-key"></i></div>
+                            <h3>Vistoria de Recebimento</h3>
+                            <span class="card-hint">Passe o mouse para saber mais</span>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-icon"><i class="fas fa-key"></i></div>
+                            <h3>Vistoria de Recebimento</h3>
+                            <p>Documentação técnica clara para exigir correções e blindar seu orçamento de cobranças indevidas.</p>
+                            <a href="https://wa.me/5547996204777?text=Olá, gostaria de saber mais sobre Vistoria de Recebimento." class="card-cta" target="_blank">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="servico-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-tools"></i></div>
+                            <h3>Plano de Manutenção</h3>
+                            <span class="card-hint">Passe o mouse para saber mais</span>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-icon"><i class="fas fa-tools"></i></div>
+                            <h3>Plano de Manutenção</h3>
+                            <p>Rotina inteligente que corta gastos, prolonga a vida útil e evita emergências.</p>
+                            <a href="https://wa.me/5547996204777?text=Olá, gostaria de saber mais sobre Plano de Manutenção." class="card-cta" target="_blank">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="servico-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-fire-extinguisher"></i></div>
+                            <h3>Projeto de Incêndio</h3>
+                            <span class="card-hint">Passe o mouse para saber mais</span>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-icon"><i class="fas fa-fire-extinguisher"></i></div>
+                            <h3>Projeto de Incêndio</h3>
+                            <p>Do projeto ao AVCB sem dor de cabeça, com segurança e conformidade regulatória.</p>
+                            <a href="https://wa.me/5547996204777?text=Olá, gostaria de saber mais sobre Projeto de Incêndio." class="card-cta" target="_blank">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 9 -->
+                <div class="servico-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-drafting-compass"></i></div>
+                            <h3>Projetos Arquitetônicos</h3>
+                            <span class="card-hint">Passe o mouse para saber mais</span>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-icon"><i class="fas fa-drafting-compass"></i></div>
+                            <h3>Projetos Arquitetônicos</h3>
+                            <p>Do estudo preliminar ao executivo: soluções sob medida que equilibram estética, funcionalidade e viabilidade.</p>
+                            <a href="https://wa.me/5547996204777?text=Olá, gostaria de saber mais sobre Projetos Arquitetônicos." class="card-cta" target="_blank">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 10 -->
+                <div class="servico-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-home"></i></div>
+                            <h3>Avaliação de Imóveis</h3>
+                            <span class="card-hint">Passe o mouse para saber mais</span>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-icon"><i class="fas fa-home"></i></div>
+                            <h3>Avaliação de Imóveis</h3>
+                            <p>Estimativa do valor de mercado do imóvel para negociações seguras de compra, venda ou locação.</p>
+                            <a href="https://wa.me/5547996204777?text=Olá, gostaria de saber mais sobre Avaliação de Imóveis." class="card-cta" target="_blank">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 11 -->
+                <div class="servico-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-stamp"></i></div>
+                            <h3>Regularização de Imóvel</h3>
+                            <span class="card-hint">Passe o mouse para saber mais</span>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-icon"><i class="fas fa-stamp"></i></div>
+                            <h3>Regularização de Imóvel</h3>
+                            <p>Imóvel devidamente reconhecido e registrado, facilitando venda, financiamento ou locação com segurança jurídica.</p>
+                            <a href="https://wa.me/5547996204777?text=Olá, gostaria de saber mais sobre Regularização de Imóvel." class="card-cta" target="_blank">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 12 -->
+                <div class="servico-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon"><i class="fas fa-hard-hat"></i></div>
+                            <h3>Gerenciamento de Obras</h3>
+                            <span class="card-hint">Passe o mouse para saber mais</span>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-icon"><i class="fas fa-hard-hat"></i></div>
+                            <h3>Gerenciamento de Obras</h3>
+                            <p>Acompanhamento técnico completo de obras e reformas, garantindo qualidade, prazo e orçamento.</p>
+                            <a href="https://wa.me/5547996204777?text=Olá, gostaria de saber mais sobre Gerenciamento de Obras." class="card-cta" target="_blank">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologia -->
+    <section id="tecnologia" class="section-tecnologia">
+        <div class="container">
+            <div class="section-header section-header--light">
+                <div class="section-eyebrow section-eyebrow--light"><i class="fas fa-microchip"></i> Diferenciais</div>
+                <h2>Tecnologia a serviço do diagnóstico</h2>
+                <p>Equipamentos de última geração para resultados precisos e laudos irrefutáveis.</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-icon-wrap"><i class="fas fa-helicopter"></i></div>
+                    <h4>Drone</h4>
+                    <p>Inspeções de fachada e cobertura com segurança e alcance total.</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon-wrap"><i class="fas fa-temperature-high"></i></div>
+                    <h4>Câmera Termográfica</h4>
+                    <p>Mapeamento de umidade, infiltrações e anomalias térmicas.</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon-wrap"><i class="fas fa-broadcast-tower"></i></div>
+                    <h4>Geofone</h4>
+                    <p>Detecção acústica de vazamentos e passagens ocultas.</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon-wrap"><i class="fas fa-magnet"></i></div>
+                    <h4>Pacômetro</h4>
+                    <p>Detecção de armaduras em estruturas de concreto.</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon-wrap"><i class="fas fa-ruler"></i></div>
+                    <h4>Paquímetro</h4>
+                    <p>Medições precisas em componentes e peças construtivas.</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon-wrap"><i class="fas fa-grip-lines"></i></div>
+                    <h4>Fissurômetro</h4>
+                    <p>Medição e monitoramento de fissuras e patologias estruturais.</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon-wrap"><i class="fas fa-flask"></i></div>
+                    <h4>Rastreador Químico</h4>
+                    <p>Detecção de infiltrações em sistemas hidrossanitários e impermeabilização.</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon-wrap"><i class="fas fa-compass"></i></div>
+                    <h4>Teodolito</h4>
+                    <p>Medição angular e levantamentos topográficos precisos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-banner-inner">
+                <div class="cta-banner-text">
+                    <h2>Você identifica algum desses problemas na sua edificação?</h2>
+                    <p>Fissuras, infiltrações, desplacamentos de fachada, umidade, estrutura comprometida? Não espere virar emergência.</p>
+                </div>
+                <a href="https://wa.me/5547996204777?text=Olá, vi o site da Inspectra Engenharia e gostaria de solicitar um orçamento." class="btn btn-whatsapp btn-lg" target="_blank">
+                    <i class="fab fa-whatsapp"></i> FALE CONOSCO AGORA
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Síndico -->
+    <section id="sindico" class="section-sindico">
+        <div class="container">
+            <div class="sindico-grid">
+                <div class="sindico-text">
+                    <div class="section-eyebrow"><i class="fas fa-hammer"></i> Para Síndicos</div>
+                    <h2>Síndico, assegure a integridade do seu condomínio</h2>
+
+                    <div class="sindico-bloco">
+                        <h4><i class="fas fa-check-circle"></i> Inspeção Predial, Estrutural e de Fachada</h4>
+                        <p>Uma vistoria completa que enxerga além do óbvio. Avaliamos a edificação, priorizamos riscos e entregamos um plano claro de ação para você decidir com segurança, do que é urgente ao que pode ser programado.</p>
+                    </div>
+
+                    <div class="sindico-beneficios">
+                        <h5>O que você ganha:</h5>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Decisões respaldadas e sem achismo</li>
+                            <li><i class="fas fa-check"></i> Prevenção de imprevistos, multas e gastos emergenciais</li>
+                            <li><i class="fas fa-check"></i> Registro técnico organizado para provas e auditorias</li>
+                            <li><i class="fas fa-check"></i> Previsibilidade de manutenção e orçamento do condomínio</li>
+                        </ul>
+                    </div>
+
+                    <div class="sindico-bloco">
+                        <h4><i class="fas fa-check-circle"></i> Assessoria Condominial</h4>
+                        <p>Acompanhamento recorrente para o síndico que quer previsibilidade o ano todo. Estabelecemos rotinas de verificação, priorizamos demandas e acompanhamos a execução do papel à entrega.</p>
+                    </div>
+
+                    <div class="sindico-beneficios">
+                        <h5>Como ajudamos no dia a dia:</h5>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Agenda de manutenção planejada e monitorada</li>
+                            <li><i class="fas fa-check"></i> Pareceres objetivos para decisões em assembleia</li>
+                            <li><i class="fas fa-check"></i> Suporte em orçamentos e comparativos de propostas</li>
+                            <li><i class="fas fa-check"></i> Documentação organizada para seu resguardo</li>
+                        </ul>
+                    </div>
+
+                    <a href="https://wa.me/5547996204777?text=Olá, sou síndico e gostaria de saber mais sobre os serviços da Inspectra." class="btn btn-primary" target="_blank">
+                        Ver serviços <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="sindico-fluxo">
+                    <div class="section-eyebrow"><i class="fas fa-hammer"></i> Nosso fluxo de trabalho</div>
+                    <h3>Como funciona</h3>
+                    <div class="fluxo-steps">
+                        <div class="fluxo-step">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h4>Briefing e alinhamento de escopo</h4>
+                                <p>Entendimento do contexto, análise de documentação e definição de cronograma e equipe.</p>
+                            </div>
+                        </div>
+                        <div class="fluxo-step">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h4>Vistoria técnica</h4>
+                                <p>Inspeção in loco com registros fotográficos, medições e ensaios com equipamentos especializados.</p>
+                            </div>
+                        </div>
+                        <div class="fluxo-step">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h4>Análise e diagnóstico</h4>
+                                <p>Processamento dos dados seguindo normas ABNT/IBAPE com classificação de criticidade.</p>
+                            </div>
+                        </div>
+                        <div class="fluxo-step">
+                            <div class="step-number">04</div>
+                            <div class="step-content">
+                                <h4>Laudo e plano de ação</h4>
+                                <p>Entrega do laudo técnico com achados, evidências e plano de ação priorizado.</p>
+                            </div>
+                        </div>
+                        <div class="fluxo-step">
+                            <div class="step-number">05</div>
+                            <div class="step-content">
+                                <h4>Apresentação dos resultados</h4>
+                                <p>Explicação clara e objetiva dos resultados para tomada de decisão segura.</p>
+                            </div>
+                        </div>
+                        <div class="fluxo-step">
+                            <div class="step-number">06</div>
+                            <div class="step-content">
+                                <h4>Suporte na implementação</h4>
+                                <p>Acompanhamento pós-inspeção com orientações práticas e plano de ação executável.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-faq">
+        <div class="container">
+            <div class="faq-grid">
+                <div class="faq-intro">
+                    <div class="section-eyebrow"><i class="fas fa-hammer"></i> FAQ</div>
+                    <h2>Perguntas frequentes</h2>
+                    <p class="faq-lead">A Inspectra Engenharia atua com inspeções Prediais, Estruturais e de Fachada, laudos e vistorias com base em normas ABNT/IBAPE. Nosso objetivo é transformar dados técnicos em decisões claras.</p>
+                    <a href="https://wa.me/5547996204777?text=Olá, tenho uma dúvida sobre os serviços da Inspectra Engenharia." class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Tire suas dúvidas
+                    </a>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Quais serviços a Inspectra oferece?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Inspeção Predial, Inspeção Estrutural, Inspeção de Fachada, Inspeção de Infiltrações e Coberturas, Vistorias Técnicas, Plano de Manutenção Predial, Perícias e Assessoria Judicial, Assessoria Condominial e Empresarial, Projetos Arquitetônicos e Complementares, Projetos Estruturais, Gerenciamento de Obras e Reformas, Auditoria de Obras, Avaliação de Imóveis, Projeto de Prevenção e Combate a Incêndio.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Como funciona o nosso fluxo de trabalho?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>1) Briefing e alinhamento de escopo → 2) Vistoria técnica com registros e ensaios → 3) Análise e diagnóstico seguindo normas ABNT/IBAPE → 4) Laudo e priorização de soluções → 5) Apresentação dos resultados → 6) Suporte na implementação do plano de ação.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Para quem são as inspeções?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Atendemos síndicos e condomínios, construtoras, indústrias e proprietários que buscam decisões técnicas claras para reduzir riscos, custos e imprevistos.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Quais normas e referências são utilizadas?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Trabalhamos com base nas normas ABNT e diretrizes do IBAPE aplicáveis a cada serviço, garantindo rastreabilidade, padronização e respaldo técnico-jurídico.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>O que é entregue ao final do trabalho?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Laudo técnico objetivo com achados, evidências (fotos/medições), classificação de criticidade e um plano de ação priorizado para execução segura e eficiente. Quando aplicável, entregamos também checklists, manuais e recomendações de manutenção.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Qual é o prazo típico para um laudo?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Varia conforme o escopo e o porte do empreendimento. Laudos de vistorias simples podem ser entregues em até 48 horas. Inspeções prediais, de fachada e estruturais podem levar até 45 dias úteis, a depender da complexidade do serviço.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Que equipamentos são usados nas inspeções?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Drone, pacômetro, fissurômetro, câmera termográfica, paquímetro, teodolito, rastreador químico, geofone e outros equipamentos conforme a necessidade específica de cada serviço.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section-contato">
+        <div class="container">
+
+            <div class="contato-header">
+                <div class="section-eyebrow section-eyebrow--light"><i class="fas fa-headset"></i> Entre em contato</div>
+                <h2>Fale com a Inspectra</h2>
+                <p>Atendimento rápido, personalizado e sem burocracia. Escolha o canal de sua preferência e um especialista entrará em contato.</p>
+            </div>
+
+            <div class="contato-canais">
+
+                <a href="https://wa.me/5547996204777?text=Olá, acessei o site da Inspectra Engenharia e gostaria de solicitar um orçamento." class="canal-card canal-card--destaque" target="_blank">
+                    <div class="canal-icon"><i class="fab fa-whatsapp"></i></div>
+                    <div class="canal-info">
+                        <strong>WhatsApp</strong>
+                        <span>(47) 9 9620-4777</span>
+                        <em>Resposta em minutos</em>
+                    </div>
+                    <i class="fas fa-arrow-right canal-arrow"></i>
+                </a>
+
+                <a href="mailto:contato@inspectraengenharia.com.br" class="canal-card" target="_blank">
+                    <div class="canal-icon"><i class="far fa-envelope"></i></div>
+                    <div class="canal-info">
+                        <strong>E-mail</strong>
+                        <span>contato@inspectraengenharia.com.br</span>
+                        <em>Resposta em até 24h</em>
+                    </div>
+                    <i class="fas fa-arrow-right canal-arrow"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/inspectra-engenharia-109980386/" class="canal-card" target="_blank">
+                    <div class="canal-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <div class="canal-info">
+                        <strong>LinkedIn</strong>
+                        <span>Inspectra Engenharia</span>
+                        <em>Conecte-se conosco</em>
+                    </div>
+                    <i class="fas fa-arrow-right canal-arrow"></i>
+                </a>
+
+                <a href="https://www.instagram.com/inspectraengenharia/" class="canal-card" target="_blank">
+                    <div class="canal-icon"><i class="fab fa-instagram"></i></div>
+                    <div class="canal-info">
+                        <strong>Instagram</strong>
+                        <span>@inspectraengenharia</span>
+                        <em>Acompanhe nossos projetos</em>
+                    </div>
+                    <i class="fas fa-arrow-right canal-arrow"></i>
+                </a>
+
+            </div>
+
+            <div class="contato-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>R. Dr. João Colin, 1285 — América, Joinville – SC</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col footer-col--about">
+                        <a href="#" class="logo logo--footer">INSPECTRA<span>ENGENHARIA</span></a>
+                        <p>Especialistas em Engenharia Diagnóstica com foco em Vistorias, Inspeções e Laudos Técnicos. Protegendo pessoas, patrimônio e valor.</p>
+                        <div class="footer-social">
+                            <a href="https://www.linkedin.com/in/inspectra-engenharia-109980386/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/inspectraengenharia/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/people/Inspectra-Engenharia/61582642889580/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Nossos Serviços</h5>
+                        <ul>
+                            <li><a href="#servicos">Inspeções Prediais, Estruturais e de Fachada</a></li>
+                            <li><a href="#servicos">Laudos Técnicos</a></li>
+                            <li><a href="#servicos">Vistorias Técnicas</a></li>
+                            <li><a href="#servicos">Avaliação de Imóveis</a></li>
+                            <li><a href="#servicos">Regularização de Imóveis</a></li>
+                            <li><a href="#servicos">Projetos de Incêndio</a></li>
+                            <li><a href="#servicos">Plano de Manutenção Predial</a></li>
+                            <li><a href="#servicos">Projeto Arquitetônico e Complementares</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Links Rápidos</h5>
+                        <ul>
+                            <li><a href="#sobre">Sobre Nós</a></li>
+                            <li><a href="#servicos">Nossos Serviços</a></li>
+                            <li><a href="#tecnologia">Equipamentos</a></li>
+                            <li><a href="#sindico">Sou Síndico</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Contatos</h5>
+                        <div class="footer-contact-items">
+                            <p><i class="fas fa-map-marker-alt"></i> R. Dr. João Colin, 1285 - América, Joinville - SC</p>
+                            <p><i class="far fa-envelope"></i> <a href="mailto:contato@inspectraengenharia.com.br">contato@inspectraengenharia.com.br</a></p>
+                            <p><i class="fas fa-phone-alt"></i> <a href="tel:+5547996204777">(47) 9 9620-4777</a></p>
+                        </div>
+                        <div class="footer-parceiro">
+                            <span>Empresa Parceira do</span>
+                            <strong>Instituto Nova Engenharia</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright © 2026 Inspectra Engenharia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-tooltip" id="wpp-tooltip">
+        Atendimento rápido | Estamos online <span class="online-dot"></span>
+    </div>
+    <a href="https://wa.me/5547996204777?text=Olá, vi o site da Inspectra Engenharia e gostaria de solicitar um orçamento." class="whatsapp-float" target="_blank" id="wpp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
