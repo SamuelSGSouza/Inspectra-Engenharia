@@ -3,9 +3,9 @@
    ============================================================ */
 
 :root {
-    --primary:       #1A6B3A;
-    --primary-dark:  #135029;
-    --primary-light: #228248;
+    --primary:       #C9A227;
+    --primary-dark:  #a8841c;
+    --primary-light: #d4b03a;
     --accent:        #C9A227;
     --accent-dark:   #a8841c;
     --black:         #0a0a0a;
@@ -179,7 +179,7 @@ h4 { font-size: 1.05rem; }
     border-radius: 50%;
     background: rgba(255,255,255,0.06);
 }
-.topbar-social a:hover { color: var(--white); background: var(--primary); }
+.topbar-social a:hover { color: var(--black); background: var(--accent); }
 
 /* ============================================================
    HEADER
@@ -214,7 +214,7 @@ h4 { font-size: 1.05rem; }
     display: flex;
     align-items: center;
 }
-.logo img { max-height: 36px; width: auto; }
+.logo img { max-height: 132px; width: auto; }
 .logo span { color: var(--accent); margin-left: 0.3rem; }
 .logo--footer { font-size: 1.4rem; }
 
@@ -315,7 +315,7 @@ nav ul li a:hover { color: var(--white); background: none; }
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(26,107,58,0.16) 0%, transparent 60%);
+    background: linear-gradient(135deg, rgba(201,162,39,0.12) 0%, transparent 60%);
     pointer-events: none;
     z-index: 1;
 }
@@ -502,8 +502,8 @@ nav ul li a:hover { color: var(--white); background: none; }
 .diferencial-icon {
     width: 42px;
     height: 42px;
-    background: var(--primary);
-    color: var(--white);
+    background: var(--accent);
+    color: var(--black);
     border-radius: var(--radius);
     display: flex;
     align-items: center;
@@ -531,7 +531,7 @@ nav ul li a:hover { color: var(--white); background: none; }
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(26,107,58,0.4), transparent 50%);
+    background: linear-gradient(to top, rgba(201,162,39,0.35), transparent 50%);
     z-index: 1;
     pointer-events: none;
 }
@@ -609,7 +609,7 @@ nav ul li a:hover { color: var(--white); background: none; }
 .card-front:hover { border-color: var(--primary); }
 .card-icon {
     width: 68px; height: 68px;
-    background: rgba(26,107,58,0.08);
+    background: rgba(201,162,39,0.08);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -618,8 +618,8 @@ nav ul li a:hover { color: var(--white); background: none; }
     transition: var(--transition);
 }
 .card-icon i { font-size: 1.7rem; color: var(--primary); }
-.servico-card:hover .card-icon { background: var(--primary); }
-.servico-card:hover .card-icon i { color: var(--white); }
+.servico-card:hover .card-icon { background: var(--accent); }
+.servico-card:hover .card-icon i { color: var(--black); }
 .card-front h3 { font-size: 1.1rem; color: var(--dark); margin-bottom: 0.5rem; }
 .card-hint {
     font-size: 0.75rem;
@@ -628,30 +628,31 @@ nav ul li a:hover { color: var(--white); background: none; }
     opacity: 0.7;
 }
 .card-back {
-    background: var(--primary);
+    background: linear-gradient(145deg, var(--black) 0%, var(--dark-2) 100%);
+    border: 1px solid rgba(201,162,39,0.35);
     transform: rotateY(180deg);
     gap: 0.8rem;
 }
-.card-back-icon i { font-size: 2rem; color: rgba(255,255,255,0.3); }
-.card-back h3 { color: var(--white); font-size: 1.05rem; }
-.card-back p { color: rgba(255,255,255,0.9); font-size: 0.92rem; line-height: 1.5; }
+.card-back-icon i { font-size: 2rem; color: rgba(201,162,39,0.25); }
+.card-back h3 { color: var(--accent); font-size: 1.05rem; }
+.card-back p { color: rgba(255,255,255,0.75); font-size: 0.92rem; line-height: 1.5; }
 .card-cta {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    color: var(--white);
+    color: var(--accent);
     font-family: var(--font-display);
     font-weight: 700;
     font-size: 0.88rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    border: 2px solid rgba(255,255,255,0.5);
+    border: 2px solid rgba(201,162,39,0.5);
     padding: 0.5rem 1rem;
     border-radius: var(--radius);
     transition: var(--transition);
     margin-top: 0.2rem;
 }
-.card-cta:hover { background: rgba(255,255,255,0.15); border-color: var(--white); }
+.card-cta:hover { background: rgba(201,162,39,0.12); border-color: var(--accent); color: var(--white); }
 
 /* ============================================================
    TECNOLOGIA
@@ -668,7 +669,7 @@ nav ul li a:hover { color: var(--white); background: none; }
     top: -200px; right: -200px;
     width: 600px; height: 600px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(26,107,58,0.12) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(201,162,39,0.10) 0%, transparent 70%);
     pointer-events: none;
 }
 .tech-grid {
@@ -685,13 +686,13 @@ nav ul li a:hover { color: var(--white); background: none; }
     transition: var(--transition);
 }
 .tech-item:hover {
-    background: rgba(26,107,58,0.1);
+    background: rgba(201,162,39,0.10);
     border-color: rgba(201,162,39,0.4);
     transform: translateY(-4px);
 }
 .tech-icon-wrap {
     width: 58px; height: 58px;
-    background: rgba(26,107,58,0.15);
+    background: rgba(201,162,39,0.14);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -699,9 +700,9 @@ nav ul li a:hover { color: var(--white); background: none; }
     margin: 0 auto 1rem;
     transition: var(--transition);
 }
-.tech-item:hover .tech-icon-wrap { background: var(--primary); }
+.tech-item:hover .tech-icon-wrap { background: var(--accent); }
 .tech-icon-wrap i { font-size: 1.4rem; color: var(--accent); transition: var(--transition); }
-.tech-item:hover .tech-icon-wrap i { color: var(--white); }
+.tech-item:hover .tech-icon-wrap i { color: var(--black); }
 .tech-item h4 {
     font-family: var(--font-display);
     font-size: 1.05rem;
@@ -714,7 +715,9 @@ nav ul li a:hover { color: var(--white); background: none; }
    CTA BANNER
    ============================================================ */
 .cta-banner {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    background: linear-gradient(135deg, var(--dark) 0%, var(--black) 100%);
+    border-top: 1px solid rgba(201,162,39,0.2);
+    border-bottom: 1px solid rgba(201,162,39,0.2);
     padding: 3.5rem 0;
 }
 .cta-banner-inner {
@@ -729,13 +732,13 @@ nav ul li a:hover { color: var(--white); background: none; }
     font-size: clamp(1.3rem, 3vw, 2rem);
     margin-bottom: 0.5rem;
 }
-.cta-banner-text p { color: rgba(255,255,255,0.82); font-size: 1rem; }
+.cta-banner-text p { color: rgba(255,255,255,0.65); font-size: 1rem; }
 .cta-banner .btn-whatsapp {
-    background: var(--white);
-    color: var(--whatsapp-dark);
+    background: var(--whatsapp);
+    color: var(--white);
     flex-shrink: 0;
 }
-.cta-banner .btn-whatsapp:hover { background: var(--light); }
+.cta-banner .btn-whatsapp:hover { background: var(--whatsapp-dark); }
 
 /* ============================================================
    SÍNDICO
@@ -980,8 +983,8 @@ nav ul li a:hover { color: var(--white); background: none; }
     transition: background 0.25s;
 }
 .canal-card:hover .canal-icon {
-    background: var(--primary);
-    color: var(--white);
+    background: var(--accent);
+    color: var(--black);
 }
 .canal-card--destaque:hover .canal-icon {
     background: var(--whatsapp-dark);
@@ -1098,7 +1101,7 @@ footer { background: var(--black); }
     font-size: 0.9rem;
     transition: var(--transition);
 }
-.footer-social a:hover { background: var(--primary); color: var(--white); }
+.footer-social a:hover { background: var(--accent); color: var(--black); }
 .footer-col ul { display: flex; flex-direction: column; gap: 0.55rem; }
 .footer-col ul li a {
     color: rgba(255,255,255,0.5);
@@ -1264,7 +1267,7 @@ footer { background: var(--black); }
 
         /* Subtle diagonal texture */
         background-image:
-            linear-gradient(135deg, rgba(26,107,58,0.08) 0%, transparent 55%),
+            linear-gradient(135deg, rgba(201,162,39,0.08) 0%, transparent 55%),
             radial-gradient(ellipse at 100% 0%, rgba(201,162,39,0.06) 0%, transparent 60%);
     }
 
@@ -1273,7 +1276,7 @@ footer { background: var(--black); }
         content: '';
         display: block;
         height: 3px;
-        background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+        background: linear-gradient(90deg, var(--black) 0%, var(--accent) 100%);
         flex-shrink: 0;
     }
 
@@ -1382,7 +1385,7 @@ footer { background: var(--black); }
         font-size: 0.88rem;
         transition: background 0.2s, color 0.2s;
     }
-    nav.open .nav-mobile-socials a:hover { background: var(--primary); color: var(--white); border-color: var(--primary); }
+    nav.open .nav-mobile-socials a:hover { background: var(--accent); color: var(--black); border-color: var(--accent); }
 
     /* ── Hamburger close btn inside nav ── */
     nav.open .nav-close-btn {
@@ -1506,4 +1509,247 @@ footer { background: var(--black); }
     .logo img { max-height: 36px; }
     .stat-item strong { font-size: 1.8rem; }
     .card-front h3, .card-back h3 { font-size: 1rem; }
+}
+/* ============================================================
+   RESPONSIVE FIXES — PATCH COMPLETO
+   Corrige todos os problemas de responsividade identificados
+   ============================================================ */
+
+/* ── 1. TOPBAR: esconde endereço em telas médias, oculta tudo < 768 ── */
+@media (max-width: 860px) {
+    .topbar-contacts span { display: none; }          /* endereço */
+    .topbar-social span   { display: none; }          /* "Siga-nos:" */
+}
+
+/* ── 2. HEADER: logo menor + gap menor em tablets ── */
+@media (max-width: 960px) {
+    .logo img { max-height: 90px; }
+    .header-inner { gap: 0.8rem; }
+    nav ul li a { padding: 0.4rem 0.5rem; font-size: 0.82rem; }
+    .btn-header  { padding: 0.4rem 0.7rem; font-size: 0.82rem; }
+}
+
+/* ── 3. HERO: melhor tratamento em tablet ── */
+@media (max-width: 960px) {
+    .hero {
+        padding: 5.5rem clamp(1rem,5%,2.5rem) 5rem;
+        min-height: 70vh;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-content { max-width: 100%; }
+    .hero > .hero-content > p { max-width: 100%; }
+    .hero-actions { justify-content: center; }
+}
+
+/* ── 4. STATS: 2 colunas em tablet ── */
+@media (max-width: 860px) {
+    .stats-inner { flex-wrap: wrap; gap: 0; }
+    .stat-divider { display: none; }
+    .stat-item { flex: 0 0 50%; min-width: unset; }
+}
+
+/* ── 5. SOBRE: 1 coluna em tablet portrait ── */
+@media (max-width: 860px) {
+    .sobre-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .sobre-visual { order: -1; }
+    .sobre-img-frame img { height: clamp(200px, 50vw, 340px); }
+}
+
+/* ── 6. SERVIÇOS: 2 colunas em tablet ── */
+@media (max-width: 860px) and (min-width: 541px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── 7. SINDICO: 1 coluna mais cedo ── */
+@media (max-width: 860px) {
+    .sindico-grid  { grid-template-columns: 1fr; gap: 2rem; }
+    .sindico-fluxo { position: static; }
+}
+
+/* ── 8. FAQ: 1 coluna em tablet ── */
+@media (max-width: 860px) {
+    .faq-grid { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+/* ── 9. FOOTER: 2 colunas em tablet, 1 em mobile ── */
+@media (max-width: 860px) and (min-width: 601px) {
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+}
+@media (max-width: 600px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .footer-top  { padding: 2.5rem 0 2rem; }
+}
+
+/* ── 10. CONTATO canais: 1 coluna logo em telas menores ── */
+@media (max-width: 700px) {
+    .contato-canais { grid-template-columns: 1fr; }
+    .canal-card--destaque { grid-column: span 1; }
+    .contato-endereco { text-align: center; flex-wrap: wrap; justify-content: center; }
+}
+
+/* ── 11. HEADER MOBILE (≤768): hamburger + ocultar nav ── */
+@media (max-width: 768px) {
+    /* Logo ainda menor */
+    .logo img { max-height: 60px; }
+
+    /* Esconde nav e botão desktop */
+    nav:not(.open) { display: none !important; }
+    .btn-header    { display: none; }
+
+    /* Mostra hamburger */
+    .hamburger { display: flex; align-items: center; justify-content: center; }
+
+    /* Header inner: só logo + hamburger */
+    .header-inner { padding: 0.5rem clamp(0.75rem,4%,1.5rem); gap: 0; }
+}
+
+/* ── 12. HERO MOBILE ── */
+@media (max-width: 768px) {
+    .hero {
+        padding: 5rem 1.2rem 4rem;
+        min-height: 80vh;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-content { max-width: 100%; }
+    .hero-badge   { font-size: 0.76rem; }
+    .hero > .hero-content > p { max-width: 100%; font-size: 0.98rem; }
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    .hero-actions .btn { width: 100%; max-width: 340px; }
+    .hero-scroll-indicator { display: none; }
+    /* Dots centralizados */
+    .hero-dots { right: 50%; transform: translateX(50%); bottom: 1.5rem; }
+}
+
+/* ── 13. STATS MOBILE ── */
+@media (max-width: 768px) {
+    .stats-inner { gap: 0; }
+    .stat-item   { flex: 0 0 50%; padding: 1rem 0.8rem; }
+}
+
+/* ── 14. CARDS de serviço MOBILE ── */
+@media (max-width: 768px) {
+    .services-grid { grid-template-columns: 1fr; }
+    .servico-card  { height: 260px; }
+    /* Hint de hover → toque */
+    .card-hint::before { content: 'Toque '; }
+}
+
+/* ── 15. TECH GRID MOBILE ── */
+@media (max-width: 768px) {
+    .tech-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── 16. CTA BANNER MOBILE ── */
+@media (max-width: 768px) {
+    .cta-banner-inner { flex-direction: column; text-align: center; }
+    .cta-banner-inner .btn { width: 100%; max-width: 340px; }
+}
+
+/* ── 17. FAQ MOBILE ── */
+@media (max-width: 768px) {
+    .faq-question { font-size: 0.95rem; padding: 1rem 1.1rem; }
+    .faq-answer   { padding: 0 1.1rem; }
+    .faq-answer.open { padding: 0 1.1rem 1rem; }
+}
+
+/* ── 18. FOOTER MOBILE ── */
+@media (max-width: 768px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+/* ── 19. TOPBAR MOBILE: ocultar ── */
+@media (max-width: 768px) {
+    .topbar { display: none; }
+    .whatsapp-tooltip { display: none; }
+}
+
+/* ── 20. PEQUENOS (≤540px) ── */
+@media (max-width: 540px) {
+    .stat-item { flex: 0 0 100%; }
+    .tech-grid { grid-template-columns: 1fr; }
+
+    .hero { padding: 4.5rem 1rem 3.5rem; }
+    .hero h1 { font-size: clamp(1.75rem, 7vw, 2.2rem); }
+
+    .services-grid { grid-template-columns: 1fr; }
+    .servico-card  { height: 250px; }
+
+    .sobre-diferenciais { padding: 1.2rem; }
+
+    .footer-grid { gap: 1.5rem; }
+
+    .whatsapp-float { width: 54px; height: 54px; font-size: 1.5rem; right: 16px; bottom: 16px; }
+    .section-header { margin-bottom: 2.5rem; }
+    .btn-lg { padding: 0.85rem 1.6rem; font-size: 1rem; }
+
+    /* Canal cards: texto menor para não transbordar */
+    .canal-info span { font-size: 0.82rem; word-break: break-all; white-space: normal; }
+    .canal-card { gap: 0.75rem; padding: 1rem 1rem; }
+}
+
+/* ── 21. MUITO PEQUENOS (≤380px) ── */
+@media (max-width: 380px) {
+    .header-inner { padding: 0.6rem 0.75rem; gap: 0.5rem; }
+    .logo img     { max-height: 44px; }
+    .stat-item strong { font-size: 1.8rem; }
+    .card-front h3, .card-back h3 { font-size: 0.95rem; }
+    /* Stats: 1 coluna em telas muito pequenas */
+    .stat-item { flex: 0 0 100%; }
+    .hero { padding: 4rem 0.75rem 3rem; }
+    .hero h1 { font-size: clamp(1.5rem, 8vw, 2rem); }
+    .sobre-diferenciais { padding: 1rem; }
+    .diferencial-item { flex-direction: column; gap: 0.6rem; }
+    .btn { padding: 0.75rem 1.2rem; font-size: 0.92rem; }
+}
+
+/* ── 22. SOBRE: card de diferencial em coluna em mobile ── */
+@media (max-width: 480px) {
+    .diferencial-item { gap: 0.75rem; }
+    .diferencial-icon { width: 36px; height: 36px; font-size: 0.9rem; }
+}
+
+/* ── 23. OVERFLOW horizontal: garantia global ── */
+@media (max-width: 768px) {
+    section, header, footer, .topbar {
+        overflow-x: hidden;
+    }
+}
+
+/* ── 24. SERVIÇOS: hint "Toque" vs "Hover" ── */
+@media (hover: none) {
+    .card-hint { display: inline-block; }
+    /* Remove "Passe o mouse" e substitui por instrução de toque */
+    .card-hint::before { content: 'Toque para saber mais'; }
+    .card-hint { font-size: 0; } /* oculta texto original */
+    .card-hint::before { font-size: 0.75rem; }
+}
+
+/* ── 25. SOBRE imagem: altura adaptável ── */
+@media (max-width: 960px) {
+    .sobre-img-frame img {
+        height: clamp(200px, 45vw, 360px);
+    }
+}
+@media (max-width: 540px) {
+    .sobre-img-frame img {
+        height: clamp(180px, 55vw, 280px);
+    }
+}
+
+/* ── CARD HINT: hover vs touch adaptativo ── */
+.hint-touch { display: none; }
+.hint-hover { display: inline; }
+
+@media (hover: none) {
+    .hint-touch { display: inline; }
+    .hint-hover { display: none; }
+    /* No touch: flip automático ao clicar (JS já faz isso) */
+    .servico-card:hover .card-inner { transform: none; }
+    .card-inner.is-flipped           { transform: rotateY(180deg); }
 }
