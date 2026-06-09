@@ -64,28 +64,41 @@ document.addEventListener('DOMContentLoaded', () => {
     // ── Flip Cards (mobile tap support) ───────────────────────
     document.querySelectorAll('.servico-card').forEach(card => {
         let touchMoved = false;
+        let touchStartX = 0;
+        let touchStartY = 0;
 
-        card.addEventListener('touchstart', function () {
+        card.addEventListener('touchstart', function (e) {
             touchMoved = false;
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
         }, { passive: true });
 
-        card.addEventListener('touchmove', function () {
-            touchMoved = true;
+        card.addEventListener('touchmove', function (e) {
+            const dx = Math.abs(e.touches[0].clientX - touchStartX);
+            const dy = Math.abs(e.touches[0].clientY - touchStartY);
+            if (dx > 8 || dy > 8) touchMoved = true;
         }, { passive: true });
 
         card.addEventListener('touchend', function (e) {
-            if (touchMoved) return; // era scroll, não toque
+            if (touchMoved) return;
+
+            // Se o toque foi dentro do card-back (lado virado), deixa o link agir normalmente
+            if (e.target.closest('.card-back')) return;
+
             e.preventDefault();
             const inner = this.querySelector('.card-inner');
             if (!inner) return;
             inner.classList.toggle('is-flipped');
         });
 
-        card.addEventListener('click', function () {
+        card.addEventListener('click', function (e) {
+            // Se o clique veio do card-back (ex: botão Saiba mais), não faz flip
+            if (e.target.closest('.card-back')) return;
             const inner = this.querySelector('.card-inner');
             if (!inner) return;
             inner.classList.toggle('is-flipped');
         });
+
         // Keyboard support
         card.setAttribute('tabindex', '0');
         card.setAttribute('role', 'button');
