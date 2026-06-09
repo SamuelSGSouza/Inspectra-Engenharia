@@ -63,6 +63,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ── Flip Cards (mobile tap support) ───────────────────────
     document.querySelectorAll('.servico-card').forEach(card => {
+        let touchMoved = false;
+
+        card.addEventListener('touchstart', function () {
+            touchMoved = false;
+        }, { passive: true });
+
+        card.addEventListener('touchmove', function () {
+            touchMoved = true;
+        }, { passive: true });
+
+        card.addEventListener('touchend', function (e) {
+            if (touchMoved) return; // era scroll, não toque
+            e.preventDefault();
+            const inner = this.querySelector('.card-inner');
+            if (!inner) return;
+            inner.classList.toggle('is-flipped');
+        });
+
         card.addEventListener('click', function () {
             const inner = this.querySelector('.card-inner');
             if (!inner) return;

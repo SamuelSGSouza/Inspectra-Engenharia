@@ -587,7 +587,11 @@ nav ul li a:hover { color: var(--white); background: none; }
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow);
 }
-.servico-card:hover .card-inner,
+/* Hover só em dispositivos que suportam hover real (desktop) */
+@media (hover: hover) {
+    .servico-card:hover .card-inner { transform: rotateY(180deg); }
+}
+/* Flip por clique/toque — funciona em qualquer dispositivo */
 .card-inner.is-flipped { transform: rotateY(180deg); }
 .card-front, .card-back {
     position: absolute;
@@ -1716,8 +1720,12 @@ footer { background: var(--black); }
 
 /* ── 23. OVERFLOW horizontal: garantia global ── */
 @media (max-width: 768px) {
-    section, header, footer, .topbar {
+    header, footer, .topbar {
         overflow-x: hidden;
+    }
+    /* sections recebem clip para não quebrar o efeito 3D dos flip cards */
+    section {
+        overflow-x: clip;
     }
 }
 
@@ -1749,7 +1757,4 @@ footer { background: var(--black); }
 @media (hover: none) {
     .hint-touch { display: inline; }
     .hint-hover { display: none; }
-    /* No touch: flip automático ao clicar (JS já faz isso) */
-    .servico-card:hover .card-inner { transform: none; }
-    .card-inner.is-flipped           { transform: rotateY(180deg); }
 }
